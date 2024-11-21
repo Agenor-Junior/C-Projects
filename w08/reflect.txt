@@ -1,0 +1,22 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Agenor Dionizio da Silva Junior
+Student ID#: 138121223
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. One benefit is increased function usability and code flexibility. When a function returns values both through arguments and the return value, this offers greater flexibility because the programmer can choose between receiving the function's result directly through the return value or passing a memory address as an argument to store the result , which is a good option in functions that can return multiple results or when you want to optimize memory usage.
+On the other hand, a negative reason is complexity and confusion in the code. When a function can return values in multiple ways, it can be more difficult to understand how to use it correctly. It also increases the chance of errors, such as forgetting to pass the correct memory address to store the results, and the program's behavior may result in unexpected values.
+
+2. For me, a function with Low Cohesion is calculateReportData. This function calculates various data fields for each product in the report, such as SKU, price, weight, servings, etc. Although it performs a specific task related to report data, it combines several responsibilities within one function. To improve cohesion, I think breaking the calculateReportData function into smaller, more focused functions would result in better cohesion. For example, perhaps separate functions would only take care of weight, another would execute costs and another would make calculation for calories. This way, each function would have a single responsibility, making the code more modular and easier to understand.
+A highly coupled function for me is displayReportData, as it takes a ReportData struct as a parameter and depends on the specific structure of this data type to display the information. This makes it very coupled to the ReportData structure. Any change in the structure may require modifications to this function. To reduce coupling, access functions or get functions could be created within the ReportData structure that provide the necessary information in a more abstract way.For example, instead of accessing a member directly within displayReportData, such as report.idNumber[i], it is possible to create a function such as getReportIdNumber that abstracts access to the internal structure. Thus, if the internal structure changes, it will only be necessary to update the access functions, minimizing the impact on other parts of the code.
+
+3. Passing structures to functions in C brings some advantages such as modularity, as passing structures to functions improves the modularization of the code, making it easier to understand and maintain. Each function can perform a specific data structure task, making the code structure cleaner and more organized.
+Another advantage is data encapsulation. Structures encapsulate data from a structure under a single name, and by passing structures to functions, it is possible to encapsulate data, improve code organization and reduce the number of variables.
+A third advantage is improved readability. Passing structures to functions can improve code readability because function signatures clearly indicate the data structure in use. This makes it easier for others to understand the purpose and use of each function.
+The displayCatFoodData function could be improved for example by changing the function parameters to receive a pointer to a CatFoodInfo struct instead of individual arrays. This would send the structure data as a single unit. Another improvement would be to access all structure members through the pointer. This would make the code more readable and maintain consistency when accessing members.

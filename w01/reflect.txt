@@ -1,0 +1,21 @@
+///////////////////////////////////////////////////////////////////////////
+
+                              Reflection
+                             Workshop - #1
+Full Name  : Agenor Dionizio da Silva Junior
+Student ID#: 138121223
+Email      : adionizio-da-silva-j@myseneca.ca
+Section    : NEE
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. I have previous experience in programming from this course, in the C language. Although I failed on the first attempt due to never having programmed before, having gone bad at the beginning of the last course and having taken a while to assimilate the content, at the end of the course I was able to understand the discipline and I believe that the result of grades did not reflect my real learning. I believe that I failed for some specific things, and that will not be repeated in this course.
+
+2. The compilation of a text file in C language to an executable file is a process in which the source file is converted into instructions for the computer and goes through some steps, such as pre-processing, in which the compiler processes the directives that begin with '#' before the main function. Afterwards, the code is compiled, assembled in machine language and linked to the necessary libraries, both in the C language and in the operating system, in order to be able to run. Then it's ready to run.
+
+3. My objective in this course is to improve my knowledge in the C language and be able to move on to the next course.

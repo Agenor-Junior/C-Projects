@@ -1,0 +1,25 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Assignment 1 - Milestone 3
+Full Name  : Agenor Dionizio da Silva Junior
+Student ID#: 138121223
+Email      : adionizio-da-silva-j@myseneca.ca
+Section    : NRB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+1. First function: void DateToInput(struct Date* inputedDate). The DateToInput function is designed to take user input for a date, specifically the year, month, and day, and store it in a Date structure. It guarantees that the date entered is valid, taking into account the number of days in each month and taking into account leap years. The function prompts the user for the year, month, in the range 1 to 12, and day, based on the month selected, and then updates the corresponding fields in the Date structure. It helps by ensuring that the user enters a valid date for scheduling appointments, avoiding errors and improving the overall reliability of the application.
+Second function: void namedTime(struct Time* appointment). The namedTime function is responsible for taking user input for the time of an appointment, specifically the hour and minute, and storing it in a Time structure. Ensures that the time entered is valid within the clinic's opening hours and follows a set interval. The function asks the user for the hour in the range 0 to 23 and the minute in the range 0 to 59 of the appointment, and only returns the calling function if all values are within the specified parameters. This function helps prevent scheduling errors and ensures that appointments are scheduled at the appropriate times and within previously set intervals.
+Third function: void SortingAppointments(struct Appointment Appointment[], int max).The SortingAppointments function is responsible for sorting a series of appointment records based on dates and times. Ensures schedules are organized in ascending date and time order, making retrieval and viewing easier. The function uses a sorting algorithm to compare and exchange the position of the members of the array in which the appointments are stored, obtaining an organized list. It simplifies the process of searching, viewing and managing appointments, and can be requested whenever necessary.
+
+
+2. One reason is that inputs and outputs are error prone, especially inputs like scanf. The less the function is called, the less likely it is to enter incorrect or invalid input, such as characters instead of numbers. It is also easier for error handling when entries are minimized or concentrated in one place. Making use of the scanf function in multiple places makes it necessary to implement error handling in multiple places, which results in more work and also less control over errors. Another reason is that it makes the program more responsive, as memory operations are faster than operations involving data input and output. A final reason is for better encapsulation and abstraction. As in software design it is a good practice to encapsulate specific features, reducing and concentrating the use of the scanf function will make the code more modular, which will help if you need to implement new features in the long term or code modifications.
+
+
+3.DateToInput function: It is used within 3 other functions. When a user adds a new appointment, the program prompts for the date, ensuring that the entry is valid and meets calendar constraints. Prevents users from entering dates that are invalid or outside the acceptable range. By encapsulating this functionality, the application ensures that dates are handled consistently and correctly.
+namedTime function: It is used in the appointment scheduling module. It handles user input regarding the time of an appointment, placing restrictions related to the clinic's opening hours and time slots. By encapsulating this functionality in the scheduling module, the program ensures that all scheduled appointments meet predefined time constraints.
+SortingAppointments function: It is used in the importAppointments and addAppointment functions. It ensures that the appointment list is ordered chronologically, making it easier for users to navigate and understand the upcoming schedule.
+

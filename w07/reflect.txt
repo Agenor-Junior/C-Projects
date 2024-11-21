@@ -1,0 +1,41 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #7
+Full Name  : Agenor Dionizio da Silva Junior
+Student ID#: 138121223
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+ 1. Yes, I was successful. The biggest difficulty was building the logic that would display the output "||||||||1|||||||||2", because this array uses different types of data to be inserted. The first thing I noticed was that the position of the numbers were multiples of 10, different from the other "|" characters. Therefore, division by 10 would give zero for all positions that needed to display numbers and not the "|" character. So, I made a For loop the size of Path Length, and with an IF conditional, where every time the remainder of dividing the loop's current position by 10 was zero, I would put the number of the position divided by 10 inside the array. When the remainder of division by 10 was not zero, I would put the character "|" . The next step was to transform this number into a character to place in the array, since this is a char array. However, just turning it into a char returned an unexpected number corresponding to the ASCII table, so researching the error, I discovered that I would need to add '0' to the sum for it to be converted to the exact number. This made it possible to eliminate the error and display the array correctly.
+
+
+ 2. The structures simplified my program because this way it was possible to organize and group the data for each type of object, giving more meaning to the construction and reading of the code. For example, in PlayerInfo there was all the data relating to the player. GameInfo in the same way about game data. Using structures makes the code clearer to understand than simply placing several variables at the beginning of the scope. Furthermore, it made the code more modular. For example, I used the GameInfo structure game1. If I wanted to define a new game configuration, I could include a new GameInfo game2 structure. And because it's mounted in a separate header, it's easier to read and reference during development. Furthermore, using structure made the code more organized and coherent when representing data, making it possible to organize variables by relationship with some significant object, making the code easier to build and read.
+
+
+ 3. The maximum number of nests I used for this workshop was 3. A For Loop, inside an IF Conditional, inside a Do While Loop. It is in the lines 192 - 204.
+
+ do
+ {
+     //--------------------------------------------------------------------- DISPLAYNG MAP
+
+     if (moveSelect != 0)
+     {
+         printf("  ");
+         for (i = 1; i < moveSelect; i++)
+         {
+             printf(" ");
+         }
+         printf("V");
+     }
+
+ } while (player1.nLives > 0);
+
+
+
+
+

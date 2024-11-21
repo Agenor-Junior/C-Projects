@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #4
+Full Name  : Agenor Dionizio da Silva Junior
+Student ID#: 138121223
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1. To make the code easier to read and maintain, I tried to keep it readable, using, for example, self-explanatory and meaningful variables, such as "appleNeed" and "applePick", making the purpose of each variable clear. I tried to use separate loops, avoiding excessive nesting to make the code clearer to understand.
+I used comments for better identification, I tried to separate the code into sections to make it as modular as possible, and I tried to leave some spaces so the code didn't get too polluted.
+
+
+2. Code nesting avoided writing unnecessary lines of code to deal with a recurring problem. For example, almost all the code is inside a Do While loop, which will be repeated as many times as the user wants. Inside this loop there are other loops, and IF conditionals. If it were not possible to nest snippets of code, it would be necessary to repeat the same snippets of code multiple times to solve the same problem. Thus, code nesting made the code cleaner, more intuitive and logical for those who will read it later.
+
+
+3. In this case, using a series of if selectors, instead of using an if/else if selection path, would be inefficient because even if an if condition has already been found and executed the logic of this if block, it will still parse all the later if conditions. This results in increased code execution time and performance loss as it will analyze other conditions unnecessarily. In an if/else if conditional, when finding the logic that
+satisfies the need, it stops the execution of the rest of the condition block and jumps to the next code block, having better efficiency and shorter execution time.
+

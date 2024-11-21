@@ -1,0 +1,20 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #5
+Full Name  : Agenor Dionizio da Silva Junior
+Student ID#: 138121223
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Using variables and macros instead of "magically" coding numbers brings advantages such as:
+   First: It improves code readability and maintainability, as the use of variables and macros makes the code more readable and self-explanatory. This makes it easier to understand what the code proposes and the values used. Some macros like MIN_YEAR, MAX_YEAR, and variables like lowerRate and upperRate are self-explanatory, requiring less effort to understand the code.
+   Second: they bring more flexibility to the code. With this, it is easy to change the input values, making it adaptable. For example, with the LOG_DAYS variable it is possible to modify the number of days in the log without having to change the code in several places.
+  Third: Error prevention. If a value is used multiple times, doing so through a variable or macro eliminates the possibility of errors that can occur when manually changing each occurrence of that value. As an example in the code, the variables JAN and DEC are used for the upper and lower limits of the months in at least 4 situations. lowerRate and upperRate is also used in several snippets. If in code maintenance, instead of using these constants, literal numbers were used, it would be easy for errors to occur during maintenance, which is more serious in a professional application, where a code has thousands of lines.
+
+2. One of the reasons is that the code becomes more modular. While the part responsible for validating the classification in the loops ensures that the values are in the range of 0.0 to 5.0 and accumulates the values in the variables mornTotal and EvenTotal, the part of the logic that calculates totals and averages stays outside the loops and works separately after the loops are completed. This separation of responsibilities makes the code more understandable and easier to maintain if there is a need to modify the logic in the future.
+    Another reason is to make the code more reusable by reducing redundancies. For example, changing LOG_DAYS allows the user to change the number of days in the average. Putting the logic of the average
+outside the loop, the code accumulates the MornTotal andEvenTotal variables, regardless of the number of iterations, to be used later in average calculations.

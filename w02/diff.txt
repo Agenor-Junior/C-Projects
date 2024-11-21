@@ -1,0 +1,14 @@
+In line number 18 of your output:
+The output should be:
+Number of shirts Tommy is buying: 3
+                 ^
+But your output is: 
+Number of shirts Patty is buying: 3
+                 ^
+
+Unmatched character details:
+The character in column 18 is supposed to be:
+  [T] ASCII code(84)
+but you printed
+  [P] ASCII code(80)
+
