@@ -17,6 +17,10 @@ piece of work is entirely of my own creation.
 int main(void)
 {
     int i, j, minMove = 3, maxMove, moveSelect = 0;
+    const char *RED = "\033[31m";
+    const char *GREEN = "\033[32m";
+    const char *BLUE = "\033[34m";
+    const char *RESET = "\033[0m";
 
     struct PlayerInfo player1;
     struct   GameInfo   game1;
@@ -47,7 +51,7 @@ int main(void)
     printf("Player configuration set-up is complete\n\n");
 
     //-------------------------------------------------------------------- GAME CONFIGURATION
-    printf("GAME Configuration\n");
+    printf("GAME Configuration\n", RED,RESET);
     printf("------------------\n");
 
     //--------------------------------------------------------------------------- PATH LENGHT
@@ -200,7 +204,7 @@ int main(void)
             {
                 printf(" ");
             }
-            printf("V");
+            printf("V", GREEN, RESET);
         }
 
 
@@ -223,10 +227,10 @@ int main(void)
             printf("%d", game1.unitMap[i]);
         }
         printf("\n");
-        printf("+---------------------------------------------------+\n");
+        printf("+---------------------------------------------------+\n", BLUE, RESET);
         printf("  Lives:  %d  | Treasures:  %d  |  Moves Remaining: %2d\n",
                            player1.nLives, player1.treasures, game1.moves);
-        printf("+---------------------------------------------------+\n");
+        printf("+---------------------------------------------------+\n", BLUE, RESET);
 
 
         //-------------------------------------------------------------- GETTING NEW MOVE 
@@ -253,7 +257,7 @@ int main(void)
         //------------------------------------------------------------- BOMB AND TREASURE
         else if (game1.setBomb[moveSelect] == 1 && game1.setTreas[moveSelect] == 1)              
         {
-            printf("\n===============> [&] !!! BOOOOOM !!! [&]\n");
+            printf("\n===============> [&] !!! BOOOOOM !!! [&]\n", RED, RESET);
             printf("===============> [&] $$$ Life Insurance Payout!!! [&]\n\n");
             player1.positHist[moveSelect] = '&';
             game1.moves--;
@@ -273,7 +277,7 @@ int main(void)
         //----------------------------------------------------------------- ONLY TREASURE
         else if (game1.setBomb[moveSelect] == 0 && game1.setTreas[moveSelect] == 1)                  
         {
-            printf("\n===============> [$] $$$ Found Treasure! $$$ [$]\n\n");
+            printf("\n===============> [$] $$$ Found Treasure! $$$ [$]\n\n", GREEN, RESET);
             player1.positHist[moveSelect] = '$';
             game1.moves--;
             player1.treasures++;
