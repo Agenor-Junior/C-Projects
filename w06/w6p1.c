@@ -1,15 +1,3 @@
-/*/////////////////////////////////////////////////////////////////////////
-                          Workshop - #6 (P1)
-Full Name  : Agenor Dionizio da Silva Junior
-Student ID#: 138121223
-Email      : adionizio-da-silva-j@myseneca.ca
-Section    : NRB
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-/////////////////////////////////////////////////////////////////////////*/
-
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #define NUM_MAX 10
